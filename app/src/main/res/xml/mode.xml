@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moe
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<com.moe.bootsetting.preference.EditTextPreference
+		android:title="模式名称："
+		android:summary=""
+		android:key="name"
+		/>
+	<com.moe.bootsetting.preference.SpinnerPreference
+		android:key="cpu_governor"
+		android:title="cpu调度"
+		android:summary=""/>
+	<com.moe.bootsetting.preference.SpinnerPreference
+		android:key="max_freq"
+		android:title="cpu最大频率"
+		android:summary=""/>
+	<com.moe.bootsetting.preference.SpinnerPreference
+		android:key="cpu_size"
+		android:title="cpu核心数"
+		android:summary=""/>
+	<com.moe.bootsetting.preference.SeekBarPreference
+		android:key="growth"
+		android:title="cpu激进程度"
+		android:progress="85"/>
+	<com.moe.bootsetting.preference.SpinnerPreference
+		android:key="gpu_governor"
+		android:title="gpu调度"
+		android:summary=""/>
+	<com.moe.bootsetting.preference.EditTextPreference
+		android:key="adj"
+		android:title="OOM_ADJ"
+		android:summary=""
+		android:digits="0123456789,"/>
+	<com.moe.bootsetting.preference.EditTextPreference
+		android:key="minfree"
+		android:digits="0123456789,"
+		android:title="OOM_MINFREE"
+		android:summary=""/>
+</moe>

@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.moe.bootsetting"
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 20
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
@@ -20,5 +20,10 @@ android {
 }
 
 dependencies {
+	compile 'com.android.support:appcompat-v7:+'
+	compile 'com.android.support:design:+'
+	compile 'com.android.support:recyclerview-v7:+'
+	compile 'com.android.support:support-core-ui:+'
+	compile 'com.android.support:support-compat:+'
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

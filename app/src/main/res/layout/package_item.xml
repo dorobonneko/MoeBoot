@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+	android:gravity="center_vertical"
+	android:paddingStart="8dp"
+	android:paddingEnd="16dp"
+	android:foreground="?attr/selectableItemBackground">
+    <ImageView
+		android:layout_margin="8dp"
+		android:layout_width="46dp"
+		android:layout_height="46dp"
+		android:scaleType="centerCrop"
+		android:id="@+id/icon"/>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical">
+		<TextView
+			app:theme="@style/title"
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	<TextView
+		app:theme="@style/summary"
+		android:id="@+id/summary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<Switch
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/switchCompat"/>
+</LinearLayout>
